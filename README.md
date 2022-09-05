@@ -21,7 +21,7 @@ For numbers 1 to 100:
 
 ## Languages
 
-- [ ] Bash
+- [X] [Bash](#bash)
 - [ ] C
 - [ ] C++
 - [ ] Clojure
@@ -45,7 +45,29 @@ For numbers 1 to 100:
 
 ## Solutions
 
-Coming soon.
+### Bash
+
+To run:
+
+```shell
+# Make executable
+chmod +x fizzbuzz.sh
+# Run
+./fizzbuzz.sh
+```
+
+Solution:
+
+```bash
+#!/usr/bin/env bash
+
+for i in $(seq 100); do
+  (( $i % 3 != 0 )) && (( $i % 5 != 0 )) && echo -n $i
+  (( $i % 3 == 0 )) && echo -n 'Fizz'
+  (( $i % 5 == 0 )) && echo -n 'Buzz'
+  echo
+done
+```
 
 <!-- Links -->
 [FizzBuzz]: https://en.wikipedia.org/wiki/Fizz_buzz
