@@ -23,7 +23,7 @@ For numbers 1 to 100:
 
 - [X] [Bash](#bash)
 - [X] [C](#c)
-- [ ] C++
+- [X] [C++](#c-1)
 - [ ] Clojure
 - [ ] Crystal
 - [ ] Elixir
@@ -95,6 +95,39 @@ int main() {
       printf("Buzz\n");
     } else {
       printf("%d\n", i);
+    }
+  }
+  return 0;
+}
+```
+
+### C++
+
+To run:
+
+```shell
+# Compile with G++
+g++ fizzbuzz.cpp -o fizzbuzz
+# Run
+./fizzbuzz
+```
+
+Solution:
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+  for (int i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      cout << "FizzBuzz" << endl;
+    } else if (i % 3 == 0) {
+      cout << "Fizz" << endl;
+    } else if (i % 5 == 0) {
+      cout << "Buzz" << endl;
+    } else {
+      cout << i << endl;
     }
   }
   return 0;
