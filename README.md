@@ -24,7 +24,7 @@ For numbers 1 to 100:
 - [X] [Bash](#bash)
 - [X] [C](#c)
 - [X] [C++](#c-1)
-- [ ] Clojure
+- [X] [Clojure](#clojure)
 - [ ] Crystal
 - [ ] Elixir
 - [ ] Erlang
@@ -132,6 +132,30 @@ int main() {
   }
   return 0;
 }
+```
+
+### Clojure
+
+To run:
+
+```shell
+clojure fizzbuzz.clj
+```
+
+Solution:
+
+```clojure
+(defn fizzbuzz [n]
+  (cond
+    (and (zero? (mod n 3)) (zero? (mod n 5))) "FizzBuzz"
+    (zero? (mod n 3)) "Fizz"
+    (zero? (mod n 5)) "Buzz"
+    :else n))
+
+(->>
+  (range 1 101)
+  (map fizzbuzz)
+  (run! println))
 ```
 
 <!-- Links -->
