@@ -26,7 +26,7 @@ For numbers 1 to 100:
 - [X] [C++](#c-1)
 - [X] [Clojure](#clojure)
 - [X] [Crystal](#crystal)
-- [ ] Elixir
+- [X] [Elixir](#elixir)
 - [ ] Erlang
 - [ ] Go
 - [ ] Groovy
@@ -180,6 +180,29 @@ Solution:
     puts i
   end
 end
+```
+
+### Elixir
+
+To run:
+
+```shell
+elixir fizzbuzz.ex
+```
+
+Solution:
+
+```elixir
+defmodule FizzBuzz do
+  def fizzbuzz(n) when rem(n, 3) == 0 and rem(n, 5) == 0, do: "FizzBuzz"
+  def fizzbuzz(n) when rem(n, 3) == 0, do: "Fizz"
+  def fizzbuzz(n) when rem(n, 5) == 0, do: "Buzz"
+  def fizzbuzz(n), do: n
+end
+
+1..100
+|> Enum.map(&FizzBuzz.fizzbuzz/1)
+|> Enum.each(&IO.puts/1)
 ```
 
 <!-- Links -->
