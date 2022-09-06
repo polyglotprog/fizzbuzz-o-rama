@@ -25,7 +25,7 @@ For numbers 1 to 100:
 - [X] [C](#c)
 - [X] [C++](#c-1)
 - [X] [Clojure](#clojure)
-- [ ] Crystal
+- [X] [Crystal](#crystal)
 - [ ] Elixir
 - [ ] Erlang
 - [ ] Go
@@ -156,6 +156,30 @@ Solution:
   (range 1 101)
   (map fizzbuzz)
   (run! println))
+```
+
+### Crystal
+
+To run:
+
+```shell
+crystal fizzbuzz.cr
+```
+
+Solution:
+
+```crystal
+(1..100).each do |i|
+  if (i % 3).zero? && (i % 5).zero?
+    puts "FizzBuzz"
+  elsif (i % 3).zero?
+    puts "Fizz"
+  elsif (i % 5).zero?
+    puts "Buzz"
+  else
+    puts i
+  end
+end
 ```
 
 <!-- Links -->
