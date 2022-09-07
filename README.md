@@ -31,7 +31,7 @@ For numbers 1 to 100:
 - [X] [Go](#go)
 - [X] [Groovy](#groovy)
 - [X] [Java](#java)
-- [ ] JavaScript
+- [X] [JavaScript](#javascript)
 - [ ] Kotlin
 - [ ] Nim
 - [ ] Perl
@@ -317,6 +317,42 @@ public class FizzBuzz {
     }
   }
 }
+```
+
+### JavaScript
+
+To run:
+
+```shell
+node fizzbuzz.js
+```
+
+Alternatively, you can run it in your browser:
+
+1. Open the developer tools.
+2. Go to the console.
+3. Paste the below code.
+4. Hit enter.
+
+Solution:
+
+```javascript
+function fizzbuzz(n) {
+  if (n % 3 === 0 && n % 5 === 0) {
+    return 'FizzBuzz'
+  } else if (n % 3 === 0) {
+    return 'Fizz'
+  } else if (n % 5 === 0) {
+    return 'Buzz'
+  } else {
+    return n
+  }
+}
+
+[...Array(100).keys()]
+  .map(i => i + 1)
+  .map(fizzbuzz)
+  .forEach(i => console.log(i))
 ```
 
 <!-- Links -->
