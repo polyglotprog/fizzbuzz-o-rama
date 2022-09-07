@@ -28,7 +28,7 @@ For numbers 1 to 100:
 - [X] [Crystal](#crystal)
 - [X] [Elixir](#elixir)
 - [X] [Erlang](#erlang)
-- [ ] Go
+- [X] [Go](#go)
 - [ ] Groovy
 - [ ] Java
 - [ ] JavaScript
@@ -230,6 +230,36 @@ run() ->
   Sequence = lists:seq(1, 100),
   FizzBuzz = lists:map(fun fizzbuzz/1, Sequence),
   lists:foreach(fun(S) -> io:format("~s~n", [S]) end, FizzBuzz).
+```
+
+### Go
+
+To run:
+
+```shell
+go run fizzbuzz.go
+```
+
+Solution:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  for i := 1; i <= 100; i++ {
+    if i % 3 == 0 && i % 5 == 0 {
+      fmt.Println("FizzBuzz")
+    } else if i % 3 == 0 {
+      fmt.Println("Fizz")
+    } else if i % 5 == 0 {
+      fmt.Println("Buzz")
+    } else {
+      fmt.Println(i)
+    }
+  }
+}
 ```
 
 <!-- Links -->
