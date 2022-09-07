@@ -29,7 +29,7 @@ For numbers 1 to 100:
 - [X] [Elixir](#elixir)
 - [X] [Erlang](#erlang)
 - [X] [Go](#go)
-- [ ] Groovy
+- [X] [Groovy](#groovy)
 - [ ] Java
 - [ ] JavaScript
 - [ ] Kotlin
@@ -258,6 +258,30 @@ func main() {
     } else {
       fmt.Println(i)
     }
+  }
+}
+```
+
+### Groovy
+
+To run:
+
+```shell
+groovy fizzbuzz.groovy
+```
+
+Solution:
+
+```groovy
+for (i in 1..100) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    println("FizzBuzz")
+  } else if (i % 3 == 0) {
+    println("Fizz")
+  } else if (i % 5 == 0) {
+    println("Buzz")
+  } else {
+    println(i)
   }
 }
 ```
