@@ -30,7 +30,7 @@ For numbers 1 to 100:
 - [X] [Erlang](#erlang)
 - [X] [Go](#go)
 - [X] [Groovy](#groovy)
-- [ ] Java
+- [X] [Java](#java)
 - [ ] JavaScript
 - [ ] Kotlin
 - [ ] Nim
@@ -282,6 +282,39 @@ for (i in 1..100) {
     println("Buzz")
   } else {
     println(i)
+  }
+}
+```
+
+### Java
+
+To run:
+
+```shell
+# Java >= 11
+java FizzBuzz.java
+
+# Java < 11
+javac FizzBuzz.java
+java FizzBuzz
+```
+
+Solution:
+
+```java
+public class FizzBuzz {
+  public static void main(String[] args) {
+    for (int i = 1; i <= 100; i++) {
+      if (i % 3 == 0 &&  i % 5 == 0) {
+        System.out.println("FizzBuzz");
+      } else if (i % 3 == 0) {
+        System.out.println("Fizz");
+      } else if (i % 5 == 0) {
+        System.out.println("Buzz");
+      } else {
+        System.out.println(i);
+      }
+    }
   }
 }
 ```
