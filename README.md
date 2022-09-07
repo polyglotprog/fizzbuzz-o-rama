@@ -33,7 +33,7 @@ For numbers 1 to 100:
 - [X] [Java](#java)
 - [X] [JavaScript](#javascript)
 - [X] [Kotlin](#kotlin)
-- [ ] Nim
+- [X] [Nim](#nim)
 - [ ] Perl
 - [ ] PHP
 - [ ] Python
@@ -379,6 +379,29 @@ fun main() {
     }
   }
 }
+```
+
+### Nim
+
+To run:
+
+```shell
+nim compile fizzbuzz.nim
+./fizzbuzz
+```
+
+Solution:
+
+```nim
+for i in 1..100:
+  if i mod 3 == 0 and i mod 5 == 0:
+    echo "FizzBuzz"
+  elif i mod 3 == 0:
+    echo "Fizz"
+  elif i mod 5 == 0:
+    echo "Buzz"
+  else:
+    echo i
 ```
 
 <!-- Links -->
