@@ -32,7 +32,7 @@ For numbers 1 to 100:
 - [X] [Groovy](#groovy)
 - [X] [Java](#java)
 - [X] [JavaScript](#javascript)
-- [ ] Kotlin
+- [X] [Kotlin](#kotlin)
 - [ ] Nim
 - [ ] Perl
 - [ ] PHP
@@ -353,6 +353,32 @@ function fizzbuzz(n) {
   .map(i => i + 1)
   .map(fizzbuzz)
   .forEach(i => console.log(i))
+```
+
+### Kotlin
+
+To run:
+
+```shell
+kotlinc fizzbuzz.kt
+kotlin FizzbuzzKt
+# You can also run it with Java!
+java FizzbuzzKt
+```
+
+Solution:
+
+```kotlin
+fun main() {
+  for (i in 1..100) {
+    when {
+      (i.mod(3) == 0 && i.mod(5) == 0) -> println("FizzBuzz")
+      (i.mod(3) == 0) -> println("Fizz")
+      (i.mod(5) == 0) -> println("Buzz")
+      else -> println(i)
+    }
+  }
+}
 ```
 
 <!-- Links -->
