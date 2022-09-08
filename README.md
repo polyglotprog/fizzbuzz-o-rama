@@ -35,7 +35,7 @@ For numbers 1 to 100:
 - [X] [Kotlin](#kotlin)
 - [X] [Nim](#nim)
 - [X] [Perl](#perl)
-- [ ] PHP
+- [X] [PHP](#php)
 - [ ] Python
 - [ ] Ruby
 - [ ] Rust
@@ -427,6 +427,40 @@ for my $i (1..100) {
   print "Buzz" if ($i % 5 == 0);
   print "\n"
 }
+```
+
+### PHP
+
+To run:
+
+```shell
+# Run with PHP
+php fizzbuzz.php
+# Or run as script
+chmod +x fizzbuzz.php
+./fizzbuzz.php
+```
+
+Solution:
+
+```php
+#!/usr/bin/env php
+
+<?php
+
+foreach (range(1, 100) as $i) {
+  if ($i % 3 == 0 && $i % 5 == 0) {
+    echo "FizzBuzz\n";
+  } elseif ($i % 3 == 0) {
+    echo "Fizz\n";
+  } elseif ($i % 5 == 0) {
+    echo "Buzz\n";
+  } else {
+    echo "$i\n";
+  }
+}
+
+?>
 ```
 
 <!-- Links -->
