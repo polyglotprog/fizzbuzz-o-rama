@@ -37,7 +37,7 @@ For numbers 1 to 100:
 - [X] [Perl](#perl)
 - [X] [PHP](#php)
 - [X] [Python](#python)
-- [ ] Ruby
+- [X] [Ruby](#ruby)
 - [ ] Rust
 - [ ] Scala
 - [ ] Smalltalk
@@ -489,6 +489,36 @@ for i in range(1, 101):
     print("Buzz")
   else:
     print(i)
+```
+
+### Ruby
+
+To run:
+
+```shell
+# Run with Ruby
+ruby fizzbuzz.rb
+# Or run as script
+chmod +x fizzbuzz.rb
+./fizzbuzz.rb
+```
+
+Solution:
+
+```ruby
+#!/usr/bin/env ruby
+
+(1..100).each do |i|
+  if (i % 3).zero? && (i % 5).zero?
+    puts "FizzBuzz"
+  elsif (i % 3).zero?
+    puts "Fizz"
+  elsif (i % 5).zero?
+    puts "Buzz"
+  else
+    puts i
+  end
+end
 ```
 
 <!-- Links -->
