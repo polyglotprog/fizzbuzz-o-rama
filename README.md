@@ -34,7 +34,7 @@ For numbers 1 to 100:
 - [X] [JavaScript](#javascript)
 - [X] [Kotlin](#kotlin)
 - [X] [Nim](#nim)
-- [ ] Perl
+- [X] [Perl](#perl)
 - [ ] PHP
 - [ ] Python
 - [ ] Ruby
@@ -402,6 +402,31 @@ for i in 1..100:
     echo "Buzz"
   else:
     echo i
+```
+
+### Perl
+
+To run:
+
+```shell
+# Run with Perl
+perl fizzbuzz.pl
+# Or run as script
+chmod +x fizzbuzz.pl
+./fizzbuzz.pl
+```
+
+Solution:
+
+```perl
+#!/usr/bin/env perl
+
+for my $i (1..100) {
+  print $i unless ($i % 3 == 0 or $i % 5 == 0);
+  print "Fizz" if ($i % 3 == 0);
+  print "Buzz" if ($i % 5 == 0);
+  print "\n"
+}
 ```
 
 <!-- Links -->
