@@ -39,7 +39,7 @@ For numbers 1 to 100:
 - [X] [Python](#python)
 - [X] [Ruby](#ruby)
 - [X] [Rust](#rust)
-- [ ] Scala
+- [X] [Scala](#scala)
 - [ ] Smalltalk
 - [ ] SQL
 
@@ -543,6 +543,35 @@ fn main() {
       println!("Buzz");
     } else {
       println!("{}", i);
+    }
+  }
+}
+```
+
+### Scala
+
+To run:
+
+```shell
+scalac FizzBuzz.scala
+scala FizzBuzz
+```
+
+Solution:
+
+```scala
+object FizzBuzz {
+  def main(args: Array[String]) {
+    for (i <- 1 to 100) {
+      if (i % 3 == 0 && i % 5 == 0) {
+        println("FizzBuzz")
+      } else if (i % 3 == 0) {
+        println("Fizz")
+      } else if (i % 5 == 0) {
+        println("Buzz")
+      } else {
+        println(i)
+      }
     }
   }
 }
