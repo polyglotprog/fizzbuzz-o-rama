@@ -2,13 +2,15 @@
 
 # FizzBuzz-O-Rama
 
-Solutions to [FizzBuzz] in 21 different [languages](#languages).
+Solutions to [FizzBuzz] in 21 different [languages](#languages). Don't
+[jump to Conclusions](#conclusions).
 
 ## Contents
 
 - [The Problem](#the-problem)
 - [Languages](#languages)
 - [Solutions](#solutions)
+- [Conclusions](#conclusions)
 
 ## The Problem
 
@@ -625,7 +627,51 @@ INSERT INTO fizzbuzz VALUES
 SELECT * FROM fizzbuzz;
 ```
 
+## Conclusions
+
+- The **Most Concise Award** goes to... **Nim**.
+- The **Most Verbose Award** goes to... **Java**.
+- The **Most Lines of Code Award** goes to... **C++** with 16 LOC. C++ really
+  is more than C!
+- The **Least Lines of Code Award** is a tie between... **Bash** and **Perl**
+  with 6 LOC each.
+- The **Most Object-Oriented Award** goes to... **Smalltalk**, where
+  *everything* is an object.
+- The **Most Functional Award** is a tie between... **Erlang** and **Elixir**.
+  Clojure and JavaScript are not far behind.
+- The **Most Unique Syntax Award** is a tie between... **Erlang** and
+  **Smalltalk**.
+- The **Best Java Award** goes to... **Kotlin**. Kotlin puts the *fun* back
+  into Java development.
+- The **Most Pythonic Award** goes to... **Nim**. Nim improves on Python's
+  simplicity and readability.
+- The **Most Rubyesque (besides Ruby) Award** goes to... **Crystal**. The code
+  is *exactly the same* as Ruby's!
+- The **Most Erlangish (besides Erlang) Award** goes to... **Elixir**.
+- The **Most Lispy Award** goes to... **Clojure**, the only [Lisp] in the
+  running.
+- The **JavaScript** solution could have been written in Angular, React, Vue,
+  Svelte, jQuery, or \[INSERT YOUR FAVORITE JAVASCRIPT FRAMEWORK HERE\]. After
+  carefully considering all of the options, I finally settled on [Vanilla JS].
+  However, instead of a simple, boring `for`-loop like so many of the other
+  solutions, a *modern, functional style with the spread operator* seemed like
+  the best approach.
+- There are some problems **SQL** is just no good at. That's why we have
+  [NoSQL].
+
+And...
+
+- My **Personal Favorites** are [Nim], [Elixir], [Clojure], and [Smalltalk]
+  ([Pharo]). ***These are the most powerful languages I have found.*** Check
+  them out. They are well worth your time.
+
 <!-- Links -->
 [FizzBuzz]: https://en.wikipedia.org/wiki/Fizz_buzz
+[Clojure]: https://clojure.org/
+[Elixir]: https://elixir-lang.org/
+[Lisp]: https://en.wikipedia.org/wiki/Lisp_(programming_language)
+[Nim]: https://nim-lang.org/
+[NoSQL]: https://en.wikipedia.org/wiki/NoSQL
 [Pharo]: https://pharo.org/
 [Smalltalk]: https://en.wikipedia.org/wiki/Smalltalk
+[Vanilla JS]: http://vanilla-js.com/
