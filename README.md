@@ -36,7 +36,7 @@ For numbers 1 to 100:
 - [X] [Nim](#nim)
 - [X] [Perl](#perl)
 - [X] [PHP](#php)
-- [ ] Python
+- [X] [Python](#python)
 - [ ] Ruby
 - [ ] Rust
 - [ ] Scala
@@ -461,6 +461,34 @@ foreach (range(1, 100) as $i) {
 }
 
 ?>
+```
+
+### Python
+
+To run:
+
+```shell
+# Run with Python
+python fizzbuzz.py
+# Or run as script
+chmod +x fizzbuzz.py
+./fizzbuzz.py
+```
+
+Solution:
+
+```python
+#!/usr/bin/env python
+
+for i in range(1, 101):
+  if i % 3 == 0 and i % 5 == 0:
+    print("FizzBuzz")
+  elif i % 3 == 0:
+    print("Fizz")
+  elif i % 5 == 0:
+    print("Buzz")
+  else:
+    print(i)
 ```
 
 <!-- Links -->
