@@ -2,13 +2,15 @@
 
 # FizzBuzz-O-Rama
 
-Solutions to [FizzBuzz] in 21 different [languages](#languages).
+Solutions to [FizzBuzz] in 21 different [languages](#languages). Don't
+[jump to Conclusions](#conclusions).
 
 ## Contents
 
 - [The Problem](#the-problem)
 - [Languages](#languages)
 - [Solutions](#solutions)
+- [Conclusions](#conclusions)
 
 ## The Problem
 
@@ -625,7 +627,74 @@ INSERT INTO fizzbuzz VALUES
 SELECT * FROM fizzbuzz;
 ```
 
-<!-- Links -->
+## Conclusions
+
+- The *Most Concise Award* &#x1F3C6; goes to&hellip; **Nim**.
+- The *Most Verbose Award* &#x1F3C6; goes to&hellip; **Java**.
+- The *Most Lines of Code Award* &#x1F3C6; goes to&hellip; **C++** with 16 LOC
+  &ndash; it really is more than C!
+- The *Least Lines of Code Award* &#x1F3C6; is a tie between&hellip; **Bash**
+  and **Perl** with 6 LOC each. You should be grateful neither of them was
+  [written in one line].
+- The *Most Object-Oriented Award* &#x1F3C6; goes to&hellip; **Smalltalk**
+  &ndash; because in Smalltalk, [*everything is an object*].
+- The *Most Functional Award* &#x1F3C6; is a three-way tie between&hellip;
+  **Clojure**, **Elixir**, and **Erlang**. 'Nuff said.
+- The *Most Unique Syntax Award* &#x1F3C6; is a tie between&hellip;
+  ~~**Prolog**~~ &ndash; er &ndash; **Erlang** and **Smalltalk**. Erlang gets
+  its "weird" (according to some) syntax from Prolog.[^1]
+- The *Best Java Award* &#x1F3C6; goes to&hellip; **Kotlin**. Kotlin puts the
+  `fun` into JVM development.
+- The *Most Pythonic Award* &#x1F3C6; goes to&hellip; **Nim**. Sorry Python!
+- The *Most Rubyesque Award* &#x1F3C6; is a tie between&hellip; **Ruby** and
+  **Crystal**. In this case, the code is exactly the same.
+- The *Most Erlangish Award* &#x1F3C6;  goes to&hellip; **Erlang**. This
+  functional language is [in a *class* of its own].
+- The *Most Lispy Award* &#x1F3C6; goes to&hellip; **Clojure**, the only [Lisp]
+  &#x1F3C6;&#x1F3C6;&#x1F3C6; in the running.[^2]
+- The **JavaScript** solution could have been written in Angular, React, Vue,
+  Svelte, jQuery, or [\[INSERT YOUR FAVORITE JAVASCRIPT FRAMEWORK HERE\]].
+  After carefully considering all of the options, I finally settled on [Vanilla
+  JS] &#x1F3C6;. However, instead of a simple, boring `for`-loop like so many
+  of the other solutions, a *modern*, *functional style* using [spread syntax]
+  seemed like the best approach ¯\\\_(ツ)\_/¯.
+- There are some problems **SQL** is just no good at. That's why there is
+  [NoSQL] &#x1F3C6;.
+- Looking for **C#**? It wasn't included because we have **C** and **C++**, and
+  [they are already sharp enough] &#x2622;.
+
+And...
+
+- My *Personal Favorites* are [Clojure]&#x1F3C5;, [Elixir]&#x1F3C5;,
+  [Nim]&#x1F3C5;, and [Smalltalk]&#x1F3C5; ([Pharo]&#x1F3C5;). ***These are
+  some of the most interesting &ndash; and powerful &ndash; languages I have
+  found.*** Check them out. They are well worth your time.
+
+
+<!------------------------------------------------------------------------------
+  Footnotes
+------------------------------------------------------------------------------->
+[^1]: https://www.erlang.org/faq/academic.html
+[^2]: https://clojure.org/about/rationale#_lisp_is_a_good_thing
+
+
+<!------------------------------------------------------------------------------
+  Links
+------------------------------------------------------------------------------->
 [FizzBuzz]: https://en.wikipedia.org/wiki/Fizz_buzz
+
+[Clojure]: https://clojure.org/
+[Elixir]: https://elixir-lang.org/
+[Lisp]: https://en.wikipedia.org/wiki/Lisp_(programming_language)
+[Nim]: https://nim-lang.org/
+[NoSQL]: https://en.wikipedia.org/wiki/NoSQL
 [Pharo]: https://pharo.org/
 [Smalltalk]: https://en.wikipedia.org/wiki/Smalltalk
+[Vanilla JS]: http://vanilla-js.com/
+
+[written in one line]: https://jacoby.github.io//2019/03/25/fizzbuzz-oneliner-in-perl.html
+[*everything is an object*]: https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_Languages/Book%3A_Squeak_by_Example_(Black_Ducasse_Nierstrasz_and_Pollet)/05%3A_The_Smalltalk_Object_Model/5.02%3A_Everything_is_an_Object
+[in a *class* of its own]: https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented?share=1
+[\[INSERT YOUR FAVORITE JAVASCRIPT FRAMEWORK HERE\]]: https://www.quora.com/What-is-JavaScript-fatigue
+[spread syntax]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+[they are already sharp enough]: https://www.goodreads.com/quotes/226222-c-makes-it-easy-to-shoot-yourself-in-the-foot
