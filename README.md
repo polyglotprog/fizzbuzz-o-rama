@@ -40,7 +40,7 @@ For numbers 1 to 100:
 - [X] [Ruby](#ruby)
 - [X] [Rust](#rust)
 - [X] [Scala](#scala)
-- [ ] Smalltalk
+- [X] [Smalltalk](#smalltalk)
 - [ ] SQL
 
 ## Solutions
@@ -577,5 +577,30 @@ object FizzBuzz {
 }
 ```
 
+### Smalltalk
+
+To run:
+
+1. Fire up your favorite [Smalltalk] environment (such as [Pharo]).
+2. Make sure the Transcript is open.
+3. Paste the below code in the Playground/Workspace.
+4. Run it!
+
+Solution:
+
+```smalltalk
+1 to: 100 do: [ :i |
+  | fizz buzz |
+  fizz := i % 3 = 0.
+  buzz := i % 5 = 0.
+  (fizz not and: buzz not) ifTrue: [ Transcript show: i; cr ].
+  (fizz and: buzz not)     ifTrue: [ Transcript show: 'Fizz'; cr ].
+  (buzz and: fizz not)     ifTrue: [ Transcript show: 'Buzz'; cr ].
+  (fizz and: buzz)         ifTrue: [ Transcript show: 'FizzBuzz'; cr ].
+].
+```
+
 <!-- Links -->
 [FizzBuzz]: https://en.wikipedia.org/wiki/Fizz_buzz
+[Pharo]: https://pharo.org/
+[Smalltalk]: https://en.wikipedia.org/wiki/Smalltalk
